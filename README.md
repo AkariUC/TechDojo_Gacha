@@ -61,3 +61,36 @@ GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, PROCESS, REFERENCES,
     ENGINE = InnoDB
     COMMENT = 'ユーザ';
     ``` 
+
+### レイヤードアーキテクチャ
+- UI(Presentation)層
+    - クライアントのこと
+    - APIサーバでは考えない
+- Application層
+    - Domain層を用いて，クライアントが欲しいデータを返す
+- Domain層
+    - クライアントからのデータを処理
+- Infrastructure層
+    - DBとの通信
+
+#### 今回のファイル構造
+- 2回目のタイミングであってるか確認お願いする
+- cmd
+    - api
+        - main.go
+- domain
+    - repository
+        - user_repository.go
+    - user.go
+- config
+    - datadase.go
+- interfaces
+    - handler
+        - user.go
+    - response
+        - responce.go
+- infrastructure
+    - persistence
+        - user.go
+- usecase
+    - user.go
