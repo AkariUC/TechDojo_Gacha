@@ -1,5 +1,6 @@
-# Created by https://www.toptal.com/developers/gitignore/api/go,macos,windows,jetbrains,jetbrains+all,jetbrains+iml
-# Edit at https://www.toptal.com/developers/gitignore?templates=go,macos,windows,jetbrains,jetbrains+all,jetbrains+iml
+
+# Created by https://www.toptal.com/developers/gitignore/api/go,macos,vscode,jetbrains,jetbrains+iml,jetbrains+all
+# Edit at https://www.toptal.com/developers/gitignore?templates=go,macos,vscode,jetbrains,jetbrains+iml,jetbrains+all
 
 ### Go ###
 # Binaries for programs and plugins
@@ -244,6 +245,7 @@ modules.xml
 # Icon must end with two \r
 Icon
 
+
 # Thumbnails
 ._*
 
@@ -263,30 +265,12 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
 
-# Dump file
-*.stackdump
-
-# Folder config file
-[Dd]esktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msix
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# End of https://www.toptal.com/developers/gitignore/api/go,macos,windows,jetbrains,jetbrains+all,jetbrains+iml
+# End of https://www.toptal.com/developers/gitignore/api/go,macos,vscode,jetbrains,jetbrains+iml,jetbrains+all
